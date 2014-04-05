@@ -11,8 +11,10 @@
 
 			$(id).chosen();
 
+		},
+		loadurl:function(url){
+			window.location=url;
 		}
-
 
 	};
 
@@ -25,6 +27,9 @@
 
 $("#selectstart").chosen({width: "65%"});
 $("#selectdestination").chosen({width: "65%"});
+
+// $("#crowd-center-intro").
+
 
 
 
