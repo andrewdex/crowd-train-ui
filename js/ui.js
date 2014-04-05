@@ -6,7 +6,13 @@
 
 		Calert:function(msg){
 			alert(msg);
+		},
+		select:function(id){
+
+			$(id).chosen();
+
 		}
+
 
 	};
 
@@ -16,3 +22,6 @@
 
 // usage 
 //crowd_t.Calert("hey");
+
+$("#selectstart").chosen({width: "65%"});
+$("#selectdestination").chosen({width: "65%"});
