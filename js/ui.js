@@ -27,8 +27,12 @@
 
 $("#selectstart").chosen({width: "65%"});
 $("#selectdestination").chosen({width: "65%"});
+$("#selecttrain").chosen({width:"65%"});
 
-// $("#crowd-center-intro").
+$("#crowd-find-trains").click(function(){
+
+	$("#crowd-find-train-grid").fadeIn();
+});
 
 
 

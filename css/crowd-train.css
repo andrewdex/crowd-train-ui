@@ -1,9 +1,9 @@
 /*crowd-source UI*/
-
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 body{
 
 	margin-top: 60px;
-	font-family: Segoe UI;
+	font-family: 'Roboto', sans-serif;
 }
 
 .crowd-drop-down{
@@ -104,4 +104,18 @@ body{
 .crowd-font-color-white{
 
 	color:#fff
+}
+
+.crowd-modal{
+
+	top:20px;
+}
+.modal{
+	top:20px;
+}
+
+.crowd-margin-left-top{
+
+margin-top: 10px;
+margin-left: 2px;
 }

@@ -94,26 +94,75 @@
 			<h3 class="crowd-font-color-white">Happy Crowd Sourcing </h3>
 			<button type="button" class="btn btn-success btn-lg">Learn More</button>
 
-			<button id="crowd-find-trains" type="button" class="btn btn-info btn-lg">Find Trains <i class="glyphicon glyphicon-search"> </i> </button>
-		</div>
-		<!-- end of intro part1 -->
-		<div class="row show-grid">
 			
-			<div class="col-md-8 col-md-offset-2">
+			<!-- Button trigger modal -->
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+				Find Trains <i class="glyphicon glyphicon-search"> </i> 
+			</button>
+		</div>
 
-				<!-- intro- find trains section -->
-				<div id="crowd-find-train-grid" >
+		
+	</div>
+
+
+	<!-- end of grid -->
+
+	<!-- Modals -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title" id="myModalLabel">Find Trains</h4>
+				</div>
+				<div class="modal-body">
+
 					
-					<!-- Train Schedule Panel-->
-					<div class="panel panel-success">
-						<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<div id="crowd-schedule-results">
+
+							
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#home" data-toggle="tab">Find Train</a></li>
+						<li><a href="#profile" data-toggle="tab">Train Results</a></li>
+						<li><a href="#messages" data-toggle="tab">Messages</a></li>
+						<li><a href="#settings" data-toggle="tab">Settings</a></li>
+					</ul>
+
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="home">
+
+							<!-- Train Schedule Panel-->
+					<div class="panel panel-success crowd-margin-left-top">
+						
 						<div class="panel-heading">
-							<h3 class="panel-title">Find Train Schedule</h3>
+							<h3 class="panel-title">Find Train Times</h3>
 						</div>
 						<div class="panel-body">
 							<!-- Schedule Form Panel-->
 							<!-- Schedule Form -->
 							<form class="form-horizontal" role="form">
+
+								<!-- Select Start -->
+								<div class="form-group">
+									<label class="col-sm-2 control-label crowd-padding-top-2">Train</label>
+									<div class="col-sm-8">
+										<!-- Select Train Start -->
+										<select id="selecttrain" data-placeholder="Select Train..." class="chosen-select crowd-select-train-start" tabindex="-1">
+
+											<option value="1">Train1</option>
+											<option value="2">Train2</option>
+											<option value="3">Train3</option>
+											<option value="4">Train4</option>
+
+										</select>
+										<!-- End of Select Train Start -->
+									</div>
+								</div>
+								<!-- Select Destination -->
 								<!-- Select Start -->
 								<div class="form-group">
 									<label class="col-sm-2 control-label crowd-padding-top-2">From</label>
@@ -142,8 +191,8 @@
 									</div>
 								</div>
 
-								
-								
+
+
 								<div class="form-group">
 									<div class="col-sm-offset-2 col-sm-8">
 										<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i> Search </button>
@@ -151,27 +200,63 @@
 								</div>
 
 							</form>
-							
+
 
 
 						</div>
 					</div>
 					<!-- End of panel train scedule -->
+					<!-- Train Schedule Result Table -->
+
+						</div>
+						<div class="tab-pane" id="profile">
+							<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Train No:</th>
+									<th>Train Name</th>
+									<th>From</th>
+									<th>To</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mark</td>
+									<td>Otto</td>
+									<td>@mdo</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Jacob</td>
+									<td>Thornton</td>
+									<td>@fat</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Larry</td>
+									<td>the Bird</td>
+									<td>@twitter</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<div class="tab-pane" id="messages">...</div>
+						<div class="tab-pane" id="settings">...</div>
+					</div>
+
+					</div>
+
 
 				</div>
-
-				<!-- end of find trains -->
-
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+				</div>
 			</div>
-			
 		</div>
-		
-		
 	</div>
-
-
-	<!-- end of grid -->
-
 
 </div>
 
