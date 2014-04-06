@@ -28,9 +28,9 @@
 $("#selectstart").chosen({width: "65%"});
 $("#selectdestination").chosen({width: "65%"});
 $("#selecttrain").chosen({width:"65%"});
+$("#select-update-delay").chosen({width:"65%"});
 
 $("#crowd-find-trains").click(function(){
-
 	$("#crowd-find-train-grid").fadeIn();
 });
 
