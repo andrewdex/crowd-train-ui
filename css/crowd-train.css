@@ -104,7 +104,12 @@ body{
 
 .crowd-font-color-white{
 
-	color:#fff
+	color:#fff;
+}
+
+.crowd-font-color-green{
+
+	color: #002C1E;
 }
 
 .crowd-modal{
